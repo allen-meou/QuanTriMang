@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản Trị Mạng Clone</title>
+  
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Link google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Link icon font font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link bootstrao -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="main">
+    <header class="header">
+      <div class="box-section">
+        <div class="headerLeft">
+          <h1>
+            <a href="#" id="logo" title="Quantrimang.com"></a>
+          </h1>
+        </div>
+        <div class="searchBox">
+          <form action="/" method="get" id="cse-search-box">
+            <div>
+              <input type="text" placeholder="Tìm kiếm" autocomplete="off" />
+              <button class="button-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="notification">
+          <i title="Thông báo" data-toggle="modal" data-target="#exampleModal"
+            class="fa-solid fa-bell btn btn-primary"></i>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Thông báo
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">Chưa có thông báo mới nào</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="headerRight">
+          <div class="container">
+  <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+    Login
+  </button>  
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+
+        </div>
+    </header>
+    <div class="mainmenu">
+      <div class="mainmenu-box-section">
+        <ul id="top-nav" class="navigation">
+          <li class="item-home">
+            <a href="#">
+              <i title="Home" class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li class="item"><a href="#">Công nghệ</a></li>
+          <li class="item"><a href="#">Window 10</a></li>
+          <li class="item"><a href="#">Iphone</a></li>
+          <li class="item"><a href="#">Android</a></li>
+          <li class="item"><a href="#">Làng CN</a></li>
+          <li class="item"><a href="#">Khoa học</a></li>
+          <li class="item"><a href="#">Ứng dụng</a></li>
+          <li class="item"><a href="#">Học CNTT</a></li>
+          <li class="item"><a href="#">Game</a></li>
+          <li class="item"><a href="#">Download</a></li>
+          <li class="item"><a href="#">Tiện ích</a></li>
+          <li class="item-all">
+            <a href="#" class="toggle-all">
+              <i title="Tất cả" class="fa-solid fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="box-section box-section-border__bottom">
+      <div class="content-main">
+        <div class="content">
+          <div class="slider">
+            <div class="slides">
+              <a href="/" title="Code JavaScript tạo mẫu biểu đồ/đồ thị vùng dạng bậc thang">
+                <img src="https://st.quantrimang.com/photos/image/2023/02/13/python-typing-test-7-size-696x364-znd.jpg"
+                  alt="Thumb" class="thumb" />
+                <span class="slides-heading">Kiểm tra tốc độ đánh máy và độ chính xác bằng Python
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="slider-two">
+            <a href="/" title="Apple có thể ra mắt dịch vụ thuê iPhone ngay từ tháng 3 năm nay"><img
+                src="https://st.quantrimang.com/photos/image/2023/02/13/cho-thue-iphone-700-size-345x0-znd.jpg"
+                alt="Apple có thể ra mắt dịch vụ thuê iPhone ngay từ tháng 3 năm nay" />
+              <span class="slider-two__title">Apple có thể ra mắt dịch vụ thuê iPhone ngay từ tháng 3 năm
+                nays</span></a>
+            <a href="#" title="Những 'kỷ lục' trong làng máy bay">
+              <img src="https://st.quantrimang.com/photos/image/2023/02/13/may-bay-700-size-345x0-znd.jpg"
+                alt="Những 'kỷ lục' trong làng máy bay" />
+              <span class="slider-two__title">Những 'kỷ lục' trong làng máy bays</span>
+            </a>
+            <a href="#" title="Cách xem ID máy tính, check ID phần cứng">
+              <img src="https://st.quantrimang.com/photos/image/2021/03/30/check-ID-phan-cung-700-size-345x0-znd.jpg"
+                alt="Cách xem ID máy tính, check ID phần cứng" />
+              <span class="slider-two__title">Cách xem ID máy tính, check ID phần cứng</span>
+            </a>
+            <a href="/" title="Tại sao nước Mỹ không dùng hệ thống đo lường hệ mét như đa số các quốc gia khác">
+              <img
+                src="https://st.quantrimang.com/photos/image/2023/02/13/he-thong-do-luong-cua-my-700-size-345x0-znd.jpg"
+                alt="Tại sao nước Mỹ không dùng hệ thống đo lường hệ mét như đa số các quốc gia khác" />
+              <span class="slider-two__title">Tại sao nước Mỹ không dùng hệ thống đo lường hệ mét như đa số
+                các quốc gia khác</span>
+            </a>
+          </div>
+
+          <!-- List new -->
+          <div class="listNews">
+            <div class="listview">
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/12/google-co-the-tich-hop-chatbot-ai-bard-vao-chromeos700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title"
+                      title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Google có thể tích hợp chatbot AI Bard
+                      vào ChromeOS
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://st.quantrimang.com/photos/avatars/2018/20854636717320292297468-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Phạm Hải </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>1 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Có một số bằng chứng cho thấy Google sẽ mang chatbot
+                        AI này đến với nhiều dịch vụ thuộc hệ sinh thái của
+                        mình hơn, trong đó có Chrome OS.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/14/ban-cap-nhat-ios-16-3-1-gay-loi-google-photos700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title"
+                      title="Bản cập nhật iOS 16.3.1 gây lỗi Google Photos, người dùng lưu ýS">Bản cập nhật iOS 16.3.1
+                      gây lỗi Google Photos, người
+                      dùng lưu ý
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://st.quantrimang.com/photos/avatars/2023/02/01/638108817691696580-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Nguyễn Trang </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>2 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Việc các bản cập nhật phần mềm hệ thống gây lỗi xung
+                        đột với ứng dụng bên thứ ba không phải hiếm.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/13/Siri-chinh-kieu-phan-hoi-700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Cách đổi kiểu phản hồi Siri trên iPhoneS">Cách đổi kiểu
+                      phản hồi Siri trên iPhone
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/default-size-24x24-znd.png" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Kandy parfume </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>3 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Người dùng hoàn toàn có thể đổi kiểu phản hồi Siri
+                        trên iPhone theo ý mình, với thiết lập sẵn có trong hệ
+                        thống. Chẳng hạn bạn có thể tắt âm trả lời Siri trên
+                        iPhone nếu
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/13/OPPO-cham-2-lan-man-hinh-700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Cách
+                      kích hoạt chạm 2 lần tắt màn hình OPPO
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/default-size-24x24-znd.png" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Trần Nhung </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>4 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Trên một số dòng điện thoại OPPO có tính năng chạm 2
+                        lần tắt màn hình điện thoại, tương tự như tính năng
+                        chạm 2 lần tắt màn hình trên điện thoại Samsung.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/14/cong-cu-sang-tac-nhac-ai-mien-phi-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">6
+                      công cụ sáng tác nhạc và lời bài hát miễn phí với sự
+                      trợ giúp của AI
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://lh4.googleusercontent.com/-NYwWpOL4srM/AAAAAAAAAAI/AAAAAAAASV8/M-bVg-75FCI/photo.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Dinh Kieu Trang </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>4 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Bạn không cần phải là một nhạc sĩ để viết ra bài hát
+                        của riêng mình. Có rất nhiều trình sáng tác nhạc trực
+                        tuyến miễn phí giúp bạn tạo giai điệu của riêng mình.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/14/an-toan-lao-dong-700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Loạt
+                      ảnh chỉ nhìn thôi cũng thấy 'run rẩy' vì sợ
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/2017/480636296661932789474-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Nhật Linh </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>5 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Những người trong ảnh dưới đây vì cuộc sống mưu sinh
+                        mà bất chấp khái niệm "an toàn". Dường như ‘an toàn
+                        lao động’ không nằm trong từ điển của họ và họ cũng
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2018/06/20/chuyen-anh-jpg-sang-pdf-iphone-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">
+                      Cách chuyển ảnh sang PDF trên iPhone cực đơn giản
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/default-size-24x24-znd.png" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Trần Phương Trà </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>6 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Để chuyển chuyển ảnh sang PDF trên iPhone, bạn có thể
+                        sử dụng nhiều cách thực hiện khác nhau. Việc chuyển
+                        ảnh sang PDF sẽ giúp chúng ta có được tập tin
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2017/12/11/bai-tap-c-plus-plus-bien-toan-tu-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">
+                      Bài tập C++ có giải (code mẫu) về biến, kiểu dữ liệu và
+                      toán tử
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/2017/163636298335339881445-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Minh Nguyễn </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>7 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Trong phần bài tập C++ trước mà Quản Trị Mạng giới
+                        thiệu, các bạn đã được làm quen với rất nhiều dạng
+                        bài, từ đơn giản đến phức tạp. Trong phần bài tập C++
+                        này,
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/14/lich-chieu-ant-man-2-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">
+                      Lịch chiếu Ant Man 3 tại Việt Nam mới nhất
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/2016/25-size-24x24-znd.jpg" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Nga Bùi</span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>8 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Ant-Man and the Wasp: Quantumania (Ant Man 3) có tên
+                        Tiếng Việt là Người Kiến và Chiến binh Ong: Thế giới
+                        Lượng tử. Đây sẽ là phần phim thứ 3 về siêu anh hùng
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/14/giai-nen-file-zip-tren-may-tinh-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Cách
+                      giải nén file Zip trên máy tính
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/2017/488636298333248915666-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Tuấn Phong </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>9 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Các file nén thường không thể sử dụng được cho đến khi
+                        bạn giải nén chúng khỏi thư mục ZIP. Bài viết hôm nay
+                        sẽ hướng dẫn bạn cách giải nén file Zip trên máy
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <a href="/" class="listview-btn__more">
+                Xem thêm<i class="fa-solid fa-circle-ellipsis"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Top-Utilities -->
+          <div class="Top-Utilities">
+            <a href="#" class="Top-Utilities__heading"><span>Tiện ích</span></a>
+            <ul class="Top-Utilities-list">
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img src="https://st.quantrimang.com/photos/image/2020/03/14/kqxsmb-640-size-250x0-znd.jpg" alt=""
+                    class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Kết quả xổ số miền Bắc (KQXSMB) hôm nay</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2020/08/27/ty-gia-ngoai-te-hom-nay-1-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Tỷ giá ngoại tệ hôm nay 15/02/2023</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img src="https://st.quantrimang.com/photos/image/2020/03/13/gia-ho-tieu-640-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Giá tiêu hôm nay 15/02/2023</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2019/12/17/Pascal-Editor-online-640-size-250x0-znd.png"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Trình biên dịch Pascal Online</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img src="https://st.quantrimang.com/photos/image/2019/03/18/python-editor-online-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Python editor online</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2020/03/30/VTV3-lich-phat-song-640-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Lịch phát sóng VTV3 hôm nay 15/02/2023 Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Vel, adipisci
+                    tempora consequatur aliquam dignissimos atque perspiciatis
+                    asperiores repellat molestias animi temporibus, tenetur
+                    mollitia sunt expedita! Itaque ipsam veritatis
+                    voluptatibus a.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Video -->
+          <div class="Top-Utilities">
+            <a href="#" class="Top-Utilities__heading Utilities-video"><span>Video</span></a>
+            <ul class="Top-Utilities-list">
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2019/03/27/Instagram-offline-tai-khoan-640-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Cách ẩn tài khoản Instagram khi online</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img src="https://st.quantrimang.com/photos/image/2023/02/14/ran-nau-do-1-size-250x0-znd.jpg" alt=""
+                    class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Bị rắn đen bụng đỏ nuốt chửng, rắn nâu vẫn cố</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2021/05/19/Excel-copy-bo-cot-hang-an-700-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Cách copy trong Excel không chứa cột và dòng</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img src="https://st.quantrimang.com/photos/image/2023/02/09/cau-Brooklyn-700-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">'Kỳ quan thứ tám của thế giới' - cầu Brooklyn được</span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2023/01/04/Xiaomi-an-bieu-tuong-ung-dung-700-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Cách ẩn biểu tượng ứng dụng trên điện thoại Xiaomi
+                  </span>
+                </a>
+              </li>
+              <li class="Top-Utilities-item">
+                <a href="#">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2023/01/04/Instagram-bat-loc-tin-nhan-700-size-250x0-znd.jpg"
+                    alt="" class="Top-Utilities-image" />
+                  <span class="top-Utilities-title">Cách lọc tin nhắn trên Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- The first day in the past -->
+          <div class="listNews">
+            <div class="listview">
+              <a href="#" class="Top-Utilities__heading Utilities-video"><span>Ngày này năm xưa </span></a>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2022/02/14/luu-video-snapchat700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Cách
+                      lưu video trên Snapchat
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://st.quantrimang.com/photos/avatars/2018/20854636717320292297468-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Phạm Hải </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>1 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Bạn quay được một đoạn video tuyệt vời bằng Snapchat
+                        và muốn chia sẻ nó lên một nền tảng mạng xã hội khác
+                        như Instagram hay Facebook? Chỉ cần lưu video đó vào
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2022/02/15/My-Viettel-tai-ung-dung-700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title"
+                      title="Bản cập nhật iOS 16.3.1 gây lỗi Google Photos, người dùng lưu ýS">My Viettel
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://st.quantrimang.com/photos/avatars/2023/02/01/638108817691696580-size-24x24-znd.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Nguyễn Trang </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>2 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        My Viettel là ứng dụng của nhà mạng Viettel dành riêng
+                        cho các thuê bao của nhà mạng, với rất nhiều tính năng
+                        hữu ích và các chương trình hấp dẫn.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img src="https://st.quantrimang.com/photos/image/2022/02/16/malware-wiper-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Cách đổi kiểu phản hồi Siri trên iPhoneS">Wiper là malware
+                      gì? Có nguy hiểm hơn ransomware không?
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/default-size-24x24-znd.png" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Kandy parfume </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>3 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Trường hợp của phần mềm độc hại nguy hiểm Wiper lại
+                        không giống như vậy, vì mục đích của nó không phải là
+                        ăn cắp tiền mà là để gây ra sự phá hủy và thiệt hại.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2022/02/16/samsung-bo-mieng-dan-bao-ve-man-hinh-tang-kem-smartphone700-size-300x0-znd.jpg"
+                      alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title" title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Cách
+                      kích hoạt chạm 2 lần tắt màn hình OPPO
+                    </a>
+                    <div class="user-info">
+                      <img src="https://st.quantrimang.com/photos/avatars/default-size-24x24-znd.png" alt=""
+                        class="user-info__avatar" />
+
+                      <span class="user-info__name">Trần Nhung </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>4 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Samsung sẽ lược bỏ miếng dán bảo vệ màn hình “tặng”
+                        kèm smartphone?
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li class="list-item">
+                  <a href="#" class="listview-thumb">
+                    <img src="https://st.quantrimang.com/photos/image/2021/12/03/vivaldi-size-300x0-znd.jpg" alt="" />
+                  </a>
+                  <div class="listview-content__right">
+                    <a href="#" class="listview-title"
+                      title="Google có thể tích hợp chatbot AI Bard vào ChromeOS">Vivaldi
+                    </a>
+                    <div class="user-info">
+                      <img
+                        src="https://lh4.googleusercontent.com/-NYwWpOL4srM/AAAAAAAAAAI/AAAAAAAASV8/M-bVg-75FCI/photo.jpg"
+                        alt="" class="user-info__avatar" />
+
+                      <span class="user-info__name">Dinh Kieu Trang </span>
+                      <span>
+                        <i class="fa-regular fa-clock user-info__time-icon"></i>4 Giờ
+                      </span>
+                    </div>
+                    <div class="dec">
+                      <p>
+                        Vivaldi là một trình duyệt nhanh, linh hoạt mang đến
+                        những tính năng tốt nhất từ trình duyệt Opera và
+                        Google Chrome, rồi kết hợp chúng trong một trình duyệt
+                        duy
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar"></div>
+      </div>
+      <div class="sidebar">
+        <div class="side-bar__fixed">
+          <div class="topnews">
+            <div class="topnews-title">
+              <a href="#" class=""><span>Được đề cử</span></a>
+            </div>
+            <ul class="topnews-list">
+              <a href="#" class="topnews-item">
+                <li>
+                  <img class="topnews-image"
+                    src="https://st.quantrimang.com/photos/image/2023/02/16/Bing-AI-cong-cu-tim-kiem-700-size-80x80-znd.jpg"
+                    alt="" />
+                  <span class="topnews-desc">Cách đăng ký sử dụng công cụ Bing AI mới</span>
+                </li>
+              </a>
+              <a href="#" class="topnews-item">
+                <li>
+                  <img class="topnews-image"
+                    src="https://st.quantrimang.com/photos/image/2023/02/14/javascript-chart-7-size-80x80-znd.jpg"
+                    alt="" />
+                  <span class="topnews-desc">Code mẫu JavaScript tạo mẫu biểu đồ vùng theo phạm vi đa
+                    cấp</span>
+                </li>
+              </a>
+              <a href="#" class="topnews-item">
+                <li>
+                  <img class="topnews-image"
+                    src="https://st.quantrimang.com/photos/image/2023/02/16/Anh-meo-LQ-700-size-80x80-znd.jpg" alt="" />
+                  <span class="topnews-desc">Ảnh mèo Liên Quân, mèo Liên Quân đẹp</span>
+                </li>
+              </a>
+              <a href="#" class="topnews-item">
+                <li>
+                  <img class="topnews-image"
+                    src="https://st.quantrimang.com/photos/image/2023/02/15/lens-protocol-la-gi-size-80x80-znd.jpg"
+                    alt="" />
+                  <span class="topnews-desc">Lens Protocol là gì? Nó giải quyết các vấn đề của Web2
+                    như thế nào?</span>
+                </li>
+              </a>
+              <a href="#" class="topnews-item">
+                <li>
+                  <img class="topnews-image"
+                    src="https://st.quantrimang.com/photos/image/2023/02/16/ma-doc-tong-tien-700-size-80x80-znd.jpg"
+                    alt="" />
+                  <span class="topnews-desc">Cảnh báo mã độc tống tiền chiếm quyền xuất hiện trên màn
+                    hình smartphone tại Việt Nam</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="new-app">
+            <div class="new-app-title"><a href="#">Ứng dụng mới</a></div>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2023/02/16/Tam-Quoc-Chess-PC-200-size-80x80-znd.jpg"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">Tam Quốc Chess PC</span>
+                    <span class="new-app-intro__publisher">Sohagame</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-regular fa-star new-app-intro__icon-light"></i>
+                      <i class="fa-regular fa-star new-app-intro__icon-light"></i>
+                      <i class="fa-regular fa-star new-app-intro__icon-light"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2023/02/16/piktina-200-size-80x80-znd.jpg"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">PIKTINA: đồ si đẹp, độc, hời</span>
+                    <span class="new-app-intro__publisher">PIKTINA Việt Nam
+                    </span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2022/02/15/mirroid-200-size-80x80-znd.png"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">Mirroid </span>
+                    <span class="new-app-intro__publisher">Mirroid</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-regular fa-star new-app-intro__icon-light"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2022/03/30/google-chrome-200-size-80x80-znd.png"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">Google Chrome </span>
+                    <span class="new-app-intro__publisher">Google</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img
+                      src="https://st.quantrimang.com/photos/image/2021/12/07/trang-nguyen-tieng-viet-200-size-80x80-znd.jpg"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">
+                      Trạng Nguyên Tiếng Việt - Trạng Nguyên Toàn Tài
+                    </span>
+                    <span class="new-app-intro__publisher">Nguyên Toàn Tài</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-regular fa-star new-app-intro__icon-light"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2023/02/14/epik-200-size-80x80-znd.jpg" alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">EPIK</span>
+                    <span class="new-app-intro__publisher">SNOW Corporation</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2023/02/10/snapsave-200-size-80x80-znd.jpg"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">SnapSave</span>
+                    <span class="new-app-intro__publisher">SnapSave.App</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="new-app-list">
+              <a href="#" class="new-app-item">
+                <li>
+                  <div class="new-app-image">
+                    <img src="https://st.quantrimang.com/photos/image/2023/02/14/3dlut-mobile-200-size-80x80-znd.png"
+                      alt="" />
+                  </div>
+                  <div class="new-app-intro">
+                    <span class="new-app-intro__title">3DLUT mobile</span>
+                    <span class="new-app-intro__publisher">Oleg Sharonov</span>
+                    <div class="new-app-intro__start">
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <i class="fa-solid fa-star new-app-intro__icon-bold"></i>
+                      <span class="new-app-intro__price">Miễn phí</span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="care-about">
+            <div class="care-about-title">
+              <a href="#">Có thể bạn quan tâm</a>
+            </div>
+            <ul class="care-about-list">
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2021/08/04/cach-viet-chu-in-dam-tren-facebook-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Cách viết chữ kiểu FB: chữ in đậm, chữ
+                    𝒏𝒈𝒉𝒊𝒆̂𝒏𝒈, đổi font
+                    chữ Facebook</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>20/01
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>31
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img src="https://st.quantrimang.com/photos/image/2021/05/29/Code-Blox-Fruit-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Code Blox Fruits update 18, code Blox Fruit Wiki mới
+                    nhất
+                    18/02/2023</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>20/01
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>55
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2022/12/02/Doi-hinh-DTCL-mua-8-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Top đội hình DTCL 13.3, đội hình mạnh DTCL mùa 8</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>08/01
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>25
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2018/12/28/tinh-phan-tram-chinh-xac-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Cách tính phần trăm (%) dễ, chính xác nhất</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>31/12
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>10
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2022/12/26/dang-ky-tai-khoan-ChatGPT-chat-AI-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Các cách tạo tài khoản ChatGPT, đăng ký Chat GPT,
+                    share
+                    tài khoản Chat GPT</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>01/02
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>60
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img src="https://st.quantrimang.com/photos/image/2023/02/16/code-tam-quoc-chess-1-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Trọn bộ code Tam Quốc Chess mới nhất 2/2023</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>Hôm qua
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>31
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2023/02/07/code-luc-gioi-phong-than-1-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Code Lục Giới Phong Thần mới nhất và cách nhập
+                    code</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>07/02
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>31
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2023/01/30/cach-dung-Chat-GPT-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Cách dùng Chat GPT rất đơn giản, sửa lỗi Chat GPT</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>06/02
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>26
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img
+                    src="https://st.quantrimang.com/photos/image/2021/01/16/tha-thinh-valentine-200-size-80x80-znd.jpg"
+                    alt="" class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Stt thả thính valentine 14/2 siêu hay, siêu chất cho
+                    dân
+                    FA</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>4 ngày
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>31
+                  </span>
+                </div>
+              </li>
+
+              <li class="care-about-item">
+                <div class="care-about-item__image">
+                  <img src="https://st.quantrimang.com/photos/image/2022/10/06/do-vui-200-size-80x80-znd.jpg" alt=""
+                    class="" />
+                </div>
+                <div class="care-about-item__content-right">
+                  <a href="#" class="care-about-item-link__title">Tổng hợp 138 câu đố vui và hài hước có đáp án</a>
+                  <span class="care-about-item__time">
+                    <i class="fa-solid fa-clock care-about-item__time-icon"></i>29/01
+                  </span>
+                  <span class="care-about-item__comments">
+                    <i class="fa-solid fa-message care-about-comments-icon"></i>30
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <ul class="footer-info-list">
+          <li class="footer-info-item">
+            <h3 class="footer-info-heading">Giới Thiệu</h3>
+            <a href="#" class="footer-info-item__link">
+              <img src="https://quantrimang.com/themes/default/images/logo.svg" alt="" /></a>
+            <p class="footer-info-item-desc">
+              Nơi chia sẻ những kiến thức mà bạn chưa biết
+            </p>
+            <p class="footer-info-item-desc">
+              Chúng tôi sẵn sàng đón những ý kiến đóng góp, cũng như bài viết
+              của các bạn gửi đến QuanTriMang.
+            </p>
+            <p class="footer-info-item-desc">
+              Hãy cùng QuanTriMang xây dựng một cộng đồng CNTT lớn mạnh nhất!
+            </p>
+          </li>
+
+          <li class="footer-info-item">
+            <h3 class="footer-info-heading">Liên Hệ</h3>
+            <p class="footer-info-desc">Email : info@meta.vn</p>
+            <img class="footer-info-desc-image" src="https://quantrimang.com/themes/default/images/logo.svg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <button id="scroll-top-button" class="scroll-top-button" onclick="scrollToTop()" type="button">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="./assets/js/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
